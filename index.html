@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <style>
+    .attribution {
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sign-up form start -->
+  <div class="container">
+
+    <div class="col col-1">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li>
+          <img class="icon" src="file:///home/aira/Documents/vs-code/Warm-up%20projects/newsletter-sign-up-with-success-message-main/images/icon-list.svg">
+          Product discovery and building what matters
+        </li>
+        <li>
+          <img class="icon" src="file:///home/aira/Documents/vs-code/Warm-up%20projects/newsletter-sign-up-with-success-message-main/images/icon-list.svg">
+          Measuring to ensure updates are a success
+        </li>
+        <li>
+          <img class="icon" src="file:///home/aira/Documents/vs-code/Warm-up%20projects/newsletter-sign-up-with-success-message-main/images/icon-list.svg">
+          And much more!
+        </li>
+      </ul>
+
+      <form onsubmit="return validateEmail()">
+        <label for="email">Email address</label>
+        <div class="emailBox">
+          <label class="invalid">Valid email required</label>
+          <input type="email" id="email" name="email" class="" placeholder="email@company.com" required>
+        </div>
+        <button type="submit" class="btn">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+
+    <div class="col col-2">
+      <img class="hero-img" src="file:///home/aira/Documents/vs-code/Warm-up%20projects/newsletter-sign-up-with-success-message-main/images/illustration-sign-up-desktop.svg">
+    </div>
+
+    <div class="col home-pg none col-3">
+      <img src="images/icon-success.svg" alt="Success">
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to <b id="userMail"></b>. Please open it and click the button inside to confirm your subscription.</p>
+      <button type="submit" class="btn dismissBtn">Dismiss message</button>
+    </div>
+
+  </div>
+  <!-- Stay updated!
+
+  Join 60,000+ product managers receiving monthly updates on:
+
+  Product discovery and building what matters
+  Measuring to ensure updates are a success
+  And much more!
+
+  Email address
+  email@company.com
+
+  Subscribe to monthly newsletter -->
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <!-- Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message -->
+
+  <!-- Success message end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/AiraSan">airasan</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
