@@ -10,8 +10,15 @@
   <style>
     .attribution {
       position: absolute;
-      bottom: 0;
-      left: 10px;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #faed79;
+    }
+    .attribution a {
+      text-decoration: none;
+      color: hsla(5, 100%, 75%, 0.836);
+      cursor: pointer;
     }
   </style>
 </head>
@@ -24,15 +31,15 @@
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
       <ul>
         <li>
-          <img class="icon" src="file:///home/aira/Documents/vs-code/Warm-up%20projects/newsletter-sign-up-with-success-message-main/images/icon-list.svg">
+          <img class="icon" src="images/icon-list.svg">
           Product discovery and building what matters
         </li>
         <li>
-          <img class="icon" src="file:///home/aira/Documents/vs-code/Warm-up%20projects/newsletter-sign-up-with-success-message-main/images/icon-list.svg">
+          <img class="icon" src="images/icon-list.svg">
           Measuring to ensure updates are a success
         </li>
         <li>
-          <img class="icon" src="file:///home/aira/Documents/vs-code/Warm-up%20projects/newsletter-sign-up-with-success-message-main/images/icon-list.svg">
+          <img class="icon" src="images/icon-list.svg">
           And much more!
         </li>
       </ul>
@@ -52,7 +59,7 @@
     </div>
 
     <div class="col home-pg none col-3">
-      <img src="images/icon-success.svg" alt="Success">
+      <img src="images/icon-success.svg">
       <h1>Thanks for subscribing!</h1>
       <p>A confirmation email has been sent to <b id="userMail"></b>. Please open it and click the button inside to confirm your subscription.</p>
       <button type="submit" class="btn dismissBtn">Dismiss message</button>
